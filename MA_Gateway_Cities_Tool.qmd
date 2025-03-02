@@ -51,9 +51,11 @@ acs_vintage <- paste0(acs_trail_year,"-",acs_lead_year)
 ```
 
 # 1.0 Load Data
-# 1.1 DOR
+# 1.1 MA Department of Revenue (DOR) Population Data
 ```{r}
-dor.pop <- read_xlsx(here())
+# Load in Massacusetts Department of Revenue Annual Population Data
+# This data can be found on the web here (https://dlsgateway.dor.state.ma.us/reports/rdPage.aspx?rdReport=Socioeconomic.Population.population_main)
+dor.pop <- read_xlsx(here("DOR.Data","DOR_Population_23.xlsx"), sheet = 1)
 ```
 
 # 1.2 Census
